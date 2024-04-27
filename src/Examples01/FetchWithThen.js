@@ -8,9 +8,11 @@ const FetchWithThen = () => {
       .then((res) => setData(res.url));
   }, []);
 
-  return <div>
-    <img src={data} width={500}/>
-  </div>;
+  return (
+    <div>
+      <img src={data} width={500} />
+    </div>
+  );
 };
 
 export default FetchWithThen;
