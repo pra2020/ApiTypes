@@ -6,6 +6,7 @@ import FetchWithAsyncAwait from "./Examples01/FetchWithAsyncAwait";
 import Axios from "./Examples01/Axios";
 import SwrLib from "./Examples01/SwrLib";
 import { Suspense } from "react";
+import ReactQuery from "./Examples01/ReactQuery";
 
 function App() {
   return (
@@ -14,10 +15,11 @@ function App() {
       {/* <FetchWithAsyncAwait/> */}
       {/* <FetchWithThen/> */}
       {/* <Swr/> */}
-      <Suspense fallback={<h1>Loading.....</h1>}>
         {/* fallback in Suspense react will render the content if data is not loaded/ error */}
+      {/* <Suspense fallback={<h1>Loading.....</h1>}>
       <SwrLib/>
-      </Suspense>
+      </Suspense> */}
+      <ReactQuery/>
     </div>
   );
 }
